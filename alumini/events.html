@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guest Lectures</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="events-style.css">
+</head>
+
+<body>
+
+  <header class="college-header">
+    <div class="college-header-container">
+      <div class="college-logo-wrapper">
+        <img src="clglogo.png" alt="St. Joseph's Logo" class="college-logo">
+      </div>
+      <div class="college-info">
+        <h1 class="college-name">St. Joseph's College of Engineering</h1>
+        <p class="college-sub">An Autonomous Institution <span class="divider">|</span> Counseling Code: 1317</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section custom-hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-badge">Est. 1994</div>
+        <h1 class="hero-heading">Empowering Minds,<br>Building the <span class="highlight">Future</span></h1>
+        <p class="hero-subtext">Discover our world-class guest lecture series, bridging the gap between academia and industry leaders to shape tomorrow's innovators.</p>
+        <div class="hero-actions">
+          <a href="#guest-lectures" class="btn btn-hero">Explore Guest Lectures</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="guest-lectures-section" id="guest-lectures">
+    <div class="container">
+      <div class="sec-header">
+        <span class="badge badge-inst">Events Showcase</span>
+        <h2 class="sec-title">Guest Lectures</h2>
+        <p class="sec-desc">
+          Discover insights from industry leaders, alumni, and experts through our curated guest lecture series.
+        </p>
+      </div>
+
+      <div class="guest-showcase-wrap">
+        <div class="guest-scroll-hint left">◀</div>
+        <div class="guest-scroll-hint right">▶</div>
+
+        <div class="guest-track-shell">
+          <div class="guest-track" id="guestTrack"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="guest-modal" id="guestModal" aria-hidden="true">
+    <div class="guest-modal-backdrop" id="guestModalBackdrop"></div>
+
+    <div class="guest-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="guestModalTitle">
+      <button class="guest-modal-close" id="guestModalClose" aria-label="Close modal">&times;</button>
+
+      <div class="guest-modal-grid">
+        <div class="guest-modal-poster-wrap">
+          <img id="modalPoster" src="" alt="Event Poster" class="guest-modal-poster">
+        </div>
+
+        <div class="guest-modal-content">
+          <span class="badge badge-inst">Guest Lecture</span>
+          <h3 id="guestModalTitle" class="guest-modal-title"></h3>
+
+          <div class="guest-meta-list">
+            <div class="guest-meta-item"><strong>Speaker:</strong> <span id="modalSpeaker"></span></div>
+            <div class="guest-meta-item"><strong>Date:</strong> <span id="modalDate"></span></div>
+            <div class="guest-meta-item"><strong>Venue:</strong> <span id="modalVenue"></span></div>
+          </div>
+
+          <div class="guest-modal-block">
+            <h4>About the Session</h4>
+            <p id="modalDescription"></p>
+          </div>
+
+          <div class="guest-modal-block">
+            <h4>Outcome</h4>
+            <p id="modalOutcome"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 St. Joseph's College of Engineering. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="events-script.js"></script>
+</body>
+
+</html>
