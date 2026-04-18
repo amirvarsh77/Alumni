@@ -4,27 +4,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guest Lectures</title>
+  <title>Guest Lectures | St Joseph's Alumni</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="system.css">
   <link rel="stylesheet" href="events-style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-
-  <header class="college-header">
-    <div class="college-header-container">
-      <div class="college-logo-wrapper">
-        <img src="clglogo.png" alt="St. Joseph's Logo" class="college-logo">
+  <!-- Institutional Navbar -->
+  <header class="inst-header">
+    <div class="inst-container header-inner">
+      <div class="header-logo">
+        <a href="index.html">St Joseph's College of Engineering</a>
       </div>
-      <div class="college-info">
-        <h1 class="college-name">St. Joseph's College of Engineering</h1>
-        <p class="college-sub">An Autonomous Institution <span class="divider">|</span> Counseling Code: 1317</p>
+      
+      <nav class="header-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#internships">Internships</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="index.html#mentor">Become a Mentor</a></li>
+          <li><a href="index.html#network">Alumni Connect</a></li>
+          <li><a href="index.html#reunion">Batch Reunion</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <button aria-label="Search" class="icon-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button aria-label="Menu" class="icon-btn mobile-menu-btn" id="mobileMenuToggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
       </div>
     </div>
   </header>
